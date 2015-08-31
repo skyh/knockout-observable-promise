@@ -1,6 +1,6 @@
 {
   "name": "knockout-promise-extender",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "lib",
   "repository": "https://github.com/skyh/knockout-promise-extender",
   "devDependencies": {
