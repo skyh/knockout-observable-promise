@@ -4,7 +4,7 @@ require('../test-env');
 
 var ko = require('knockout');
 var observable = ko.observable;
-var extender = require('../lib/observable-promise-extender');
+var extender = require('../lib');
 var PromiseState = require('../lib/internal/PromiseState');
 
 function expectIsObservable(x) {
