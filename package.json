@@ -1,7 +1,6 @@
 {
   "name": "knockout-observable-promise",
-  "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "repository": "https://github.com/skyh/knockout-observable-promise",
   "devDependencies": {
     "chai": "^3.2.0",
@@ -18,6 +17,7 @@
   },
   "scripts": {
     "test": "node_modules/.bin/mocha",
-    "postinstall": "node_modules/.bin/gulp build:example"
+    "postinstall": "node_modules/.bin/gulp build:example",
+    "prepublish": "rm -r **/*.pack.js || true"
   }
 }
