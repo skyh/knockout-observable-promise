@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Knockout Promise Extender example</title>
+		<script src="examples.pack.js"></script>
+	</head>
+	<body>
+		<h1>Knockout Promise Extender</h1>
+		<h2>example state</h2>
+		<div id="example-1">
+			<div>
+				pending: <span data-bind="text: text().pending"></span>
+			</div>
+			<div>
+				resolved: <span data-bind="text: text().resolved"></span>
+			</div>
+			<div>
+				rejected: <span data-bind="text: text().rejected"></span>
+			</div>
+			<div>
+				value: <span data-bind="text: text().value"></span>
+			</div>
+		</div>
+	</body>
+</html>
