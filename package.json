@@ -1,0 +1,23 @@
+{
+  "name": "knockout-observable-promise",
+  "private": true,
+  "version": "0.1.0",
+  "repository": "https://github.com/skyh/knockout-observable-promise",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "knockout": "^3.3.0",
+    "mocha": "^2.2.5",
+    "setimmediate": "^1.0.2",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0",
+    "webpack": "^1.12.0"
+  },
+  "peerDependencies": {
+    "knockout": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha",
+    "postinstall": "node_modules/.bin/gulp build:example"
+  }
+}
