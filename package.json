@@ -1,6 +1,6 @@
 {
-  "name": "knockout-observable-promise",
-  "version": "1.0.2",
+  "name": "knockout-promise-extender",
+  "version": "1.0.3",
   "main": "lib",
   "repository": "https://github.com/skyh/knockout-promise-extender",
   "devDependencies": {
