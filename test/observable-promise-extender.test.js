@@ -148,9 +148,10 @@ describe('observable-promise-extender', function () {
 					extenderObservable.subscribe(spy);
 					expect(spy).to.not.have.been.called;
 
-					input(newValue);
+					extenderObservable(newValue);
 
 					setImmediate(function () {
+						expectPSOIsPending(extenderObservable);
 						expect(spy).to.not.have.been.called;
 						done();
 					});
@@ -169,7 +170,7 @@ describe('observable-promise-extender', function () {
 					extenderObservable.subscribe(spy);
 					expect(spy).to.not.have.been.called;
 
-					input(newValue);
+					extenderObservable(newValue);
 
 					expect(spy).to.have.been.calledOnce;
 					expectPSOIsResolved(extenderObservable, newValue);
@@ -189,7 +190,7 @@ describe('observable-promise-extender', function () {
 					extenderObservable.subscribe(spy);
 					expectPSOIsPending(extenderObservable);
 
-					input(newValuePromise);
+					extenderObservable(newValuePromise);
 
 					expectPSOIsPending(extenderObservable);
 
