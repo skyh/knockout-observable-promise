@@ -1,7 +1,7 @@
 'use strict';
 
 var ko = require('knockout');
-ko.extenders.promise = require('../lib/observable-promise-extender');
+ko.extenders.promise = require('../lib');
 
 ko.extenders.logChange = function(target, option) {
 	console.log(option + ": ", target.peek());
