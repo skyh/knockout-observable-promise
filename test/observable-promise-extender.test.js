@@ -177,8 +177,8 @@ describe('observable-promise-extender', function () {
 				});
 			});
 
-			describe('from undefined to Promise', function () {
-				it('runs callback once async immediately with promise value', function (done) {
+			describe('from undefined to resolved Promise', function () {
+				it('runs callback twice - sync with pending and promised async with value', function (done) {
 					var currentValue = undefined;
 					var newValue = {};
 					var newValuePromise = Promise.resolve(newValue);
@@ -192,13 +192,12 @@ describe('observable-promise-extender', function () {
 
 					extenderObservable(newValuePromise);
 
+					expect(spy).to.have.been.called;
 					expectPSOIsPending(extenderObservable);
-
-					expect(spy).to.have.not.been.called;
 
 					setImmediate(function () {
 						expectPSOIsResolved(extenderObservable, newValue);
-						expect(spy).to.have.been.calledOnce;
+						expect(spy).to.have.been.calledTwice;
 						done();
 					});
 				});
