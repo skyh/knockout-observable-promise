@@ -13,26 +13,22 @@ ko.extenders.logChange = function(target, option) {
 
 document.addEventListener('DOMContentLoaded', function () {
 	var model1 = {
-		text: ko.observable().extend({promise: true})
+		text: ko.observable(new Promise(function (resolve, reject) {
+			setTimeout(resolve, 1000, 'resolved text');
+		})).extend({promise: true})
 	};
+
+	// model1.text = ko.pureComputed(function () {
+	// 	return model1.textPromise();
+	// }).extend({promise: true});
 
 	window.model1 = model1;
 
+	// console.log(model1.text());
+	model1.text.subscribe(console.log.bind(console, 'changed text'));
+	model1.text(new Promise(function (resolve) {
+		setTimeout(resolve, 2000, 'another text');
+	}));
+
 	ko.applyBindings(model1, document.getElementById('example-1'));
-
-	// first, set text synchronously
-	model1.text('Text as string. Wait 2 secs.');
-
-	// wait fo 1 sec
-	setTimeout(function () {
-		// and set text via promise
-		model1.text(new Promise(function (resolve, reject) {
-			// now model1.text will be at pending state
-			// wait 1 sec
-			setTimeout(function () {
-				// now it will be resolved with new text
-				resolve('New text from Promise');
-			}, 2000);
-		}));
-	}, 2000);
 });
