@@ -19,7 +19,6 @@
   },
   "scripts": {
     "test": "node_modules/.bin/mocha",
-    "postinstall": "node_modules/.bin/gulp build:example",
     "prepublish": "npm test"
   }
 }
