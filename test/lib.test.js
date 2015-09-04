@@ -1,7 +1,5 @@
 'use strict';
 
-require('../test-env');
-
 var ko = require('knockout');
 var observable = ko.observable;
 var extender = require('../lib');
