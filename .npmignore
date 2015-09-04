@@ -3,3 +3,7 @@
 gulpfile.js
 
 *.sublime-project
+*.sublime-workspace
+*.pack.js
+
+examples
