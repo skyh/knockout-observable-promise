@@ -1,9 +1,6 @@
 'use strict';
 
-require('../test-env');
-
-var PromiseState = require('../lib/internal/PromiseState');
-
+var PromiseState = require('../../lib/internal/PromiseState');
 
 describe('PromiseState', function () {
 	describe('Constructor', function () {
