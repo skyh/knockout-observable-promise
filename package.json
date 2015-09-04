@@ -20,5 +20,9 @@
   "scripts": {
     "test": "node_modules/.bin/mocha",
     "prepublish": "npm test"
-  }
+  },
+  "keywords": [
+    "knockout",
+    "Promise"
+  ]
 }
