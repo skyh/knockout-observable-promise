@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.8]
+### Added
+- Package keywords
+
 ## [1.0.7]
 ### Added
 - Change log
