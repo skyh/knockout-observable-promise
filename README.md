@@ -5,24 +5,19 @@ Knockout extender for handling promises.
 ## Installation
 
 ```sh
-
 npm install knockout-promise-extender
-
 ```
 
 ## Adding to knockout
 
 ```js
-
 var ko = require('knockout');
 ko.extenders.promise = require('knockout-promise-extender');
-
 ```
 
 ## Usage
 
 ```js
-
 var x = ko.observable().extend({promise: true});
 
 console.log(
@@ -54,13 +49,11 @@ setTimeout(function () {
         x().value // "some value"
     );
 }, 0);
-
 ```
 
 ## Usage in bindings
 
 ```html
-
 <div class="promised-model-view">
     <!-- ko if: x().pending -->
         <span class="wait-message">
@@ -79,7 +72,4 @@ setTimeout(function () {
         </span>
     <!-- /ko -->
 </div>
-
 ```
-
-
