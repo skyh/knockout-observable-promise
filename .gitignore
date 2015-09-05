@@ -3,3 +3,5 @@ npm-debug.log
 
 *.sublime-workspace
 *.pack.js
+
+out
