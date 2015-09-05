@@ -3,7 +3,7 @@
   "version": "1.0.8",
   "main": "lib",
   "repository": "https://github.com/skyh/knockout-promise-extender",
-  "license" : "MIT",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^3.2.0",
     "gulp": "^3.9.0",
@@ -19,7 +19,7 @@
     "knockout": "*"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha",
+    "test": "mocha",
     "prepublish": "npm test",
     "jsdoc": "jsdoc -c build/jsdoc-config.json"
   },
