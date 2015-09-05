@@ -7,6 +7,7 @@
   "devDependencies": {
     "chai": "^3.2.0",
     "gulp": "^3.9.0",
+    "jsdoc": "^3.3.2",
     "knockout": "^3.3.0",
     "mocha": "^2.2.5",
     "setimmediate": "^1.0.2",
@@ -19,7 +20,8 @@
   },
   "scripts": {
     "test": "node_modules/.bin/mocha",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "jsdoc": "jsdoc -c build/jsdoc-config.json"
   },
   "keywords": [
     "knockout",
