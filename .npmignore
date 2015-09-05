@@ -1,3 +1,4 @@
+.npmignore
 .editorconfig
 .travis.yml
 gulpfile.js
@@ -8,3 +9,6 @@ gulpfile.js
 
 examples
 out
+build
+test
+test-env
