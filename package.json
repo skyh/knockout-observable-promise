@@ -1,6 +1,6 @@
 {
   "name": "knockout-promise-extender",
-  "version": "1.0.10",
+  "version": "2.0.0",
   "main": "lib",
   "repository": "https://github.com/skyh/knockout-promise-extender",
   "license": "MIT",
