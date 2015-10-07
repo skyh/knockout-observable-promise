@@ -15,9 +15,6 @@
     "sinon-chai": "^2.8.0",
     "webpack": "^1.12.0"
   },
-  "peerDependencies": {
-    "knockout": "*"
-  },
   "scripts": {
     "test": "mocha",
     "prepublish": "npm test",
