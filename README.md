@@ -12,7 +12,8 @@ npm install knockout-promise-extender
 
 ```js
 var ko = require('knockout');
-ko.extenders.promise = require('knockout-promise-extender');
+var promiseExtenderFactory = require('knockout-promise-extender');
+ko.extenders.promise = promiseExtenderFactory(ko);
 ```
 
 ## Usage
