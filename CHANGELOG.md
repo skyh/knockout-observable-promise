@@ -1,5 +1,9 @@
 # Change Log
 
+## [2.0.1]
+### Fixed
+- Error in readme documentation
+
 ## [2.0]
 ### Added
 - Ability to work with multiple knockout instances in same context
