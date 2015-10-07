@@ -1,6 +1,6 @@
 {
   "name": "knockout-promise-extender",
-  "version": "1.0.10",
+  "version": "2.0.0",
   "main": "lib",
   "repository": "https://github.com/skyh/knockout-promise-extender",
   "license": "MIT",
@@ -14,9 +14,6 @@
     "sinon": "^1.16.1",
     "sinon-chai": "^2.8.0",
     "webpack": "^1.12.0"
-  },
-  "peerDependencies": {
-    "knockout": "*"
   },
   "scripts": {
     "test": "mocha",

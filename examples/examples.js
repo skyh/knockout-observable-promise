@@ -1,7 +1,7 @@
 'use strict';
 
 var ko = require('knockout');
-ko.extenders.promise = require('../lib');
+ko.extenders.promise = require('../lib')(ko);
 
 ko.extenders.logChange = function(target, option) {
 	console.log(option + ": ", target.peek());

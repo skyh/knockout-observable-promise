@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0]
+### Added
+- Ability to work with multiple knockout instances in same context
+
+### Changed
+- External interface, so version is 2.0
+
 ## [1.0.8]
 ### Added
 - Package keywords
