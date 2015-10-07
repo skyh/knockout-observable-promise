@@ -2,7 +2,7 @@
 
 var ko = require('knockout');
 var observable = ko.observable;
-var extender = require('../lib');
+var extender = require('../lib')(ko);
 var PromiseState = require('../lib/internal/PromiseState');
 
 function expectIsObservable(x) {
